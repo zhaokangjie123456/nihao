@@ -26,7 +26,8 @@
 //echo shell_exec("cd $root && sudo git pull $repo");
 //
 //echo shell_exec("sudo chown -R www-data:www-data $root");
-$secret = '';
+//git项目设置里的秘钥
+$secret = 'zhaoxiansheng';
 //项目的目录
 $path = '/home/wwwroot/default/git';
 ////git仓库地址
