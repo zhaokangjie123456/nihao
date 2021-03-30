@@ -5,7 +5,8 @@ $secret = 'zhaoxiansheng';
 $path = '/home/wwwroot/default/git';
 ////git仓库地址
 //$repo     = "https://github.com/zhaokangjie123456/nihao.git";
-$signature = $_SERVER['HTTP_X_HUB_SIGHATURE'];
+//$signature = $_SERVER['HTTP_X_HUB_SIGHATURE'];
+$signature = $_SERVER['HTTP_X_HUB_SIGNATURE'];
 if($signature){
     $hash = 'shaq'.hash_hmac('sha1',file_get_contents('php://input'),$secret);
     if(strcmp($signature,$hash) == 0){
